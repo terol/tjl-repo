@@ -7,7 +7,7 @@ RewriteEngine on
 ErrorDocument 404 /404.html
 
 # Rewrite php to html..
-# RewriteRule ^index\.htm$ index.php [NC,R]
+RewriteRule ^index\.htm$ index.php [NC,R]
 
 # Rewrite any calls to *.html, *.json, *.xml, *.atom, *.rss, *.rdf or *.txt if a folder matching * exists
 RewriteCond %{REQUEST_FILENAME} !-f
